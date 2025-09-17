@@ -18,6 +18,7 @@ export async function generateStaticParams() {
       slug: slug,
     }));
   } catch (error) {
+    console.error('Error generating static params:', error);
     // Fallback for build time if content loading fails
     return [
       { slug: 'about' },

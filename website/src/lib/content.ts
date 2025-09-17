@@ -83,16 +83,24 @@ export function getContentBySlug(type: 'pages' | 'sermons' | 'articles' | 'event
 }
 
 export function getAllContentSlugs(type: 'pages' | 'sermons' | 'articles' | 'events'): string[] {
-  const typeDirectory = path.join(contentDirectory, type);
-  
-  if (!fs.existsSync(typeDirectory)) {
+  try {
+    const typeDirectory = path.join(contentDirectory, type);
+    
+    if (!fs.existsSync(typeDirectory)) {
+      console.warn(`Content directory does not exist: ${typeDirectory}`);
+      return [];
+    }
+
+    const fileNames = fs.readdirSync(typeDirectory);
+    const slugs = fileNames
+      .filter((name) => name.endsWith('.md'))
+      .map((fileName) => fileName.replace(/\.md$/, ''));
+    
+    return slugs;
+  } catch (error) {
+    console.error(`Error reading content directory for type ${type}:`, error);
     return [];
   }
-
-  const fileNames = fs.readdirSync(typeDirectory);
-  return fileNames
-    .filter((name) => name.endsWith('.md'))
-    .map((fileName) => fileName.replace(/\.md$/, ''));
 }
 
 export function getContentByTag(type: 'pages' | 'sermons' | 'articles' | 'events', tag: string): ContentItem[] {
