@@ -9,24 +9,24 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          900: '#1a365d',
-          700: '#2d5a87',
-          500: '#4299e1',
-          300: '#90cdf4',
-          100: '#ebf8ff',
+          900: '#4F0300', /* Maroon/Dark Red */
+          700: '#674230', /* Brown */
+          500: '#536678', /* Blue-Gray */
+          300: '#D5E6E5', /* Pale Blue-Green/Mint */
+          100: '#E3E4DF', /* Cream/Off-White */
         },
         secondary: {
-          900: '#744210',
-          700: '#a0522d',
-          500: '#d69e2e',
-          300: '#f6e05e',
+          900: '#2D2B1C', /* Dark Olive Green/Brown-Green */
+          700: '#444849', /* Charcoal Gray */
+          500: '#536678', /* Blue-Gray */
+          300: '#D5E6E5', /* Pale Blue-Green/Mint */
         },
         neutral: {
-          900: '#1a202c',
-          700: '#4a5568',
-          500: '#718096',
-          300: '#e2e8f0',
-          100: '#f7fafc',
+          900: '#2D2B1C', /* Dark Olive Green/Brown-Green */
+          700: '#444849', /* Charcoal Gray */
+          500: '#536678', /* Blue-Gray */
+          300: '#D5E6E5', /* Pale Blue-Green/Mint */
+          100: '#E3E4DF', /* Cream/Off-White */
         },
         success: {
           500: '#48bb78',
@@ -38,7 +38,7 @@ module.exports = {
           500: '#f56565',
         },
         info: {
-          500: '#4299e1',
+          500: '#536678', /* Blue-Gray */
         },
       },
       fontFamily: {
@@ -50,9 +50,9 @@ module.exports = {
         DEFAULT: {
           css: {
             maxWidth: 'none',
-            color: '#1a202c',
+            color: '#2D2B1C', /* Dark Olive Green/Brown-Green */
             h1: {
-              color: '#1a202c',
+              color: '#2D2B1C', /* Dark Olive Green/Brown-Green */
               fontWeight: '700',
               fontSize: '2.25rem',
               lineHeight: '2.5rem',
@@ -60,7 +60,7 @@ module.exports = {
               marginBottom: '1.5rem',
             },
             h2: {
-              color: '#1a202c',
+              color: '#2D2B1C', /* Dark Olive Green/Brown-Green */
               fontWeight: '600',
               fontSize: '1.875rem',
               lineHeight: '2.25rem',
@@ -68,7 +68,7 @@ module.exports = {
               marginBottom: '1rem',
             },
             h3: {
-              color: '#1a202c',
+              color: '#2D2B1C', /* Dark Olive Green/Brown-Green */
               fontWeight: '600',
               fontSize: '1.5rem',
               lineHeight: '2rem',
@@ -76,7 +76,7 @@ module.exports = {
               marginBottom: '0.75rem',
             },
             h4: {
-              color: '#1a202c',
+              color: '#2D2B1C', /* Dark Olive Green/Brown-Green */
               fontWeight: '600',
               fontSize: '1.25rem',
               lineHeight: '1.75rem',
@@ -89,11 +89,11 @@ module.exports = {
               lineHeight: '1.75',
             },
             blockquote: {
-              borderLeftColor: '#4299e1',
+              borderLeftColor: '#536678', /* Blue-Gray */
               borderLeftWidth: '4px',
               paddingLeft: '1rem',
               fontStyle: 'italic',
-              color: '#4a5568',
+              color: '#444849', /* Charcoal Gray */
               marginTop: '1.5rem',
               marginBottom: '1.5rem',
             },
@@ -113,22 +113,22 @@ module.exports = {
             },
             strong: {
               fontWeight: '600',
-              color: '#1a202c',
+              color: '#2D2B1C', /* Dark Olive Green/Brown-Green */
             },
             em: {
               fontStyle: 'italic',
             },
             code: {
-              backgroundColor: '#f7fafc',
+              backgroundColor: '#FFFFE6', /* Cream/Off-White */
               padding: '0.125rem 0.25rem',
               borderRadius: '0.25rem',
               fontSize: '0.875rem',
               fontWeight: '500',
-              color: '#2d5a87',
+              color: '#536678', /* Blue-Gray */
             },
             pre: {
-              backgroundColor: '#1a202c',
-              color: '#f7fafc',
+              backgroundColor: '#2D2B1C', /* Dark Olive Green/Brown-Green */
+              color: '#FFFFE6', /* Cream/Off-White */
               padding: '1rem',
               borderRadius: '0.5rem',
               overflow: 'auto',

@@ -3,31 +3,31 @@
 @tailwind utilities;
 
 :root {
-  /* Primary Colors */
-  --primary-900: #1a365d;
-  --primary-700: #2d5a87;
-  --primary-500: #4299e1;
-  --primary-300: #90cdf4;
-  --primary-100: #ebf8ff;
+  /* Primary Colors - Final 7-Color Palette */
+  --primary-900: #4F0300; /* Maroon/Dark Red */
+  --primary-700: #674230; /* Brown */
+  --primary-500: #536678; /* Blue-Gray */
+  --primary-300: #D5E6E5; /* Pale Blue-Green/Mint */
+  --primary-100: #E3E4DF; /* Cream/Off-White */
 
   /* Secondary Colors */
-  --secondary-900: #744210;
-  --secondary-700: #a0522d;
-  --secondary-500: #d69e2e;
-  --secondary-300: #f6e05e;
+  --secondary-900: #2D2B1C; /* Dark Olive Green/Brown-Green */
+  --secondary-700: #444849; /* Charcoal Gray */
+  --secondary-500: #536678; /* Blue-Gray */
+  --secondary-300: #D5E6E5; /* Pale Blue-Green/Mint */
 
   /* Neutral Colors */
-  --neutral-900: #1a202c;
-  --neutral-700: #4a5568;
-  --neutral-500: #718096;
-  --neutral-300: #e2e8f0;
-  --neutral-100: #f7fafc;
+  --neutral-900: #2D2B1C; /* Dark Olive Green/Brown-Green */
+  --neutral-700: #444849; /* Charcoal Gray */
+  --neutral-500: #536678; /* Blue-Gray */
+  --neutral-300: #D5E6E5; /* Pale Blue-Green/Mint */
+  --neutral-100: #E3E4DF; /* Cream/Off-White */
 
   /* Semantic Colors */
   --success-500: #48bb78;
   --warning-500: #ed8936;
   --error-500: #f56565;
-  --info-500: #4299e1;
+  --info-500: #536678; /* Blue-Gray */
 
   /* Spacing System */
   --space-1: 0.25rem;

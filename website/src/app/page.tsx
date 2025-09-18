@@ -3,6 +3,7 @@ import { Button, Card, CardContent, CardHeader } from '@/components/ui';
 import { SermonCard, ArticleCard, EventCard } from '@/components/content';
 import { getContentByType } from '@/lib/content';
 import { getUpcomingEvents } from '@/lib/calendar';
+import Image from 'next/image';
 
 export default function Home() {
   // Get sample content for demonstration
@@ -13,8 +14,20 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-700 to-primary-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <section className="relative text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/grace-reformed-weiser/images/hero-landscape.jpg"
+            alt="Beautiful landscape of Weiser, Idaho"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-display font-bold mb-6">
               Welcome to Grace Reformed Church
@@ -150,8 +163,19 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-16 text-white overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/grace-reformed-weiser/images/welcome-church.jpg"
+            alt="Grace Reformed Church building"
+            fill
+            className="object-cover"
+          />
+        </div>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-display font-bold mb-4">
             Ready to Visit?
           </h2>
